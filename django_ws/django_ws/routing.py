@@ -15,4 +15,3 @@ application = ProtocolTypeRouter(
         "websocket": WebSocketJWTAuthMiddleware(URLRouter(routing.websocket_urlpatterns)),
     }
 )
-docker run -p 6379:6379 -d redis:5
